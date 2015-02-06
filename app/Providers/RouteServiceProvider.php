@@ -12,7 +12,7 @@ class RouteServiceProvider extends ServiceProvider {
 	 *
 	 * @var string
 	 */
-	protected $namespace = 'App\Http\Controllers';
+	protected $namespace = 'Cms\Controllers';
 
 	/**
 	 * Define your route model bindings, pattern filters, etc.
@@ -22,6 +22,8 @@ class RouteServiceProvider extends ServiceProvider {
 	 */
 	public function boot(Router $router)
 	{
+
+		dd('yyyyyyyyyyyyyy');
 		parent::boot($router);
 
 		//
