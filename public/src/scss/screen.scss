@@ -1,0 +1,45 @@
+@import '_bootstrap.scss';
+
+// ----------------------------------------------------------------------------------
+body {
+	margin: 10px;
+}
+
+
+// ----------------------------------------------------------------------------------
+// Nodes
+.node {
+}
+
+.node-container {
+	padding: 5px;
+	border: 3px dashed $gray-light;
+}
+
+.node-create {
+	& {
+		display: block;
+		text-align: center;
+		line-height: 50px;
+		background: $gray-lighter;
+	}
+
+	&:before {
+		content: '+';
+		font-size: 45px;
+		font-weight: 600;
+		color: $gray;
+		vertical-align: top;
+	}
+
+	&:hover {
+		& {
+			background: $brand-primary;
+			text-decoration: none;
+		}
+
+		&:before {
+			color: #fff;
+		}
+	}
+}
