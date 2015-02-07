@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "26a42457e2390002f638123bd7f3dbe1",
+    "hash": "b3162406f99a558e913c033885502e81",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -2795,12 +2795,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chris-at-github/yoyo-cms.git",
-                "reference": "25c17196be0043beabeacef2831a06df51ee503e"
+                "reference": "f6ace1f1c8bc8cd88c97e67bbbf6473def65264b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chris-at-github/yoyo-cms/zipball/25c17196be0043beabeacef2831a06df51ee503e",
-                "reference": "25c17196be0043beabeacef2831a06df51ee503e",
+                "url": "https://api.github.com/repos/chris-at-github/yoyo-cms/zipball/f6ace1f1c8bc8cd88c97e67bbbf6473def65264b",
+                "reference": "f6ace1f1c8bc8cd88c97e67bbbf6473def65264b",
                 "shasum": ""
             },
             "require": {
@@ -2827,7 +2827,7 @@
                 "source": "https://github.com/chris-at-github/yoyo-cms/tree/master",
                 "issues": "https://github.com/chris-at-github/yoyo-cms/issues"
             },
-            "time": "2015-02-07 08:59:57"
+            "time": "2015-02-07 09:59:33"
         }
     ],
     "aliases": [],
