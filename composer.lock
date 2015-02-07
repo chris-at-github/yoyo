@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "24c3946acc997e3f3eca7fc5c99585b2",
+    "hash": "26a42457e2390002f638123bd7f3dbe1",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -410,16 +410,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.0",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "44c61252b5762ff53ad181ed416e3006c50a6a9b"
+                "reference": "30391aa20874c30725f653bea1ea5b895a5217cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/44c61252b5762ff53ad181ed416e3006c50a6a9b",
-                "reference": "44c61252b5762ff53ad181ed416e3006c50a6a9b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/30391aa20874c30725f653bea1ea5b895a5217cf",
+                "reference": "30391aa20874c30725f653bea1ea5b895a5217cf",
                 "shasum": ""
             },
             "require": {
@@ -531,7 +531,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-02-04 13:59:07"
+            "time": "2015-02-06 23:14:12"
         },
         {
             "name": "league/flysystem",
@@ -2788,11 +2788,53 @@
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
             "time": "2015-01-25 04:39:26"
+        },
+        {
+            "name": "yoyo/cms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chris-at-github/yoyo-cms.git",
+                "reference": "25c17196be0043beabeacef2831a06df51ee503e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chris-at-github/yoyo-cms/zipball/25c17196be0043beabeacef2831a06df51ee503e",
+                "reference": "25c17196be0043beabeacef2831a06df51ee503e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cms\\": "src/Cms/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Pschorr",
+                    "email": "pschorr.christian@gmail.com"
+                }
+            ],
+            "description": "a simple cms based on laravel",
+            "support": {
+                "source": "https://github.com/chris-at-github/yoyo-cms/tree/master",
+                "issues": "https://github.com/chris-at-github/yoyo-cms/issues"
+            },
+            "time": "2015-02-07 08:59:57"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "yoyo/cms": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
