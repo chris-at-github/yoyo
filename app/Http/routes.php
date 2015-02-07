@@ -10,4 +10,4 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/', 'Cms\Controllers\PageController@index');
+Route::get('/', 'PageController@index');
