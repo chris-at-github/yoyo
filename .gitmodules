@@ -1,0 +1,3 @@
+[submodule "vendor/yoyo/cms"]
+	path = vendor/yoyo/cms
+	url = https://github.com/chris-at-github/yoyo-cms.git
