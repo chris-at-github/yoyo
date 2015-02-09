@@ -1,5 +1,8 @@
 <?php
 
+// Routes to model injection
+Route::model('nodeType', 'Cms\Models\NodeType');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -10,4 +13,10 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+
 Route::get('/', 'PageController@index');
+Route::get('/create/{nodeType?}', array(
+	'as' 		=> 'node.create',
+	'uses'	=> 'NodeController@create'
+));
