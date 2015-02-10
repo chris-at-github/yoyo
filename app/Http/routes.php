@@ -20,3 +20,7 @@ Route::get('/create/{nodeType?}', array(
 	'as' 		=> 'node.create',
 	'uses'	=> 'NodeController@create'
 ));
+Route::any('/save/{id?}', array(
+	'as' 		=> 'node.save',
+	'uses'	=> 'NodeController@save'
+));

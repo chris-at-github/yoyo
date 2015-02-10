@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b3162406f99a558e913c033885502e81",
+    "hash": "3781a1474842b523408df14dee334e76",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1783,6 +1783,52 @@
             "time": "2014-10-13 12:58:55"
         },
         {
+            "name": "illuminate/html",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/html.git",
+                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/html/zipball/3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
+                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Html\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2015-01-01 16:31:18"
+        },
+        {
             "name": "phpdocumentor/reflection-docblock",
             "version": "2.0.4",
             "source": {
@@ -2795,12 +2841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chris-at-github/yoyo-cms.git",
-                "reference": "f6ace1f1c8bc8cd88c97e67bbbf6473def65264b"
+                "reference": "25980378e019925198e7160a4dab454f67932035"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chris-at-github/yoyo-cms/zipball/f6ace1f1c8bc8cd88c97e67bbbf6473def65264b",
-                "reference": "f6ace1f1c8bc8cd88c97e67bbbf6473def65264b",
+                "url": "https://api.github.com/repos/chris-at-github/yoyo-cms/zipball/25980378e019925198e7160a4dab454f67932035",
+                "reference": "25980378e019925198e7160a4dab454f67932035",
                 "shasum": ""
             },
             "require": {
@@ -2827,7 +2873,7 @@
                 "source": "https://github.com/chris-at-github/yoyo-cms/tree/master",
                 "issues": "https://github.com/chris-at-github/yoyo-cms/issues"
             },
-            "time": "2015-02-07 09:59:33"
+            "time": "2015-02-09 05:47:10"
         }
     ],
     "aliases": [],

@@ -16,7 +16,8 @@
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1",
-		"yoyo/cms": "dev-master"
+		"yoyo/cms": "dev-master",
+		"illuminate/html": "~5.0"
 	},
 	"autoload": {
 		"classmap": [
