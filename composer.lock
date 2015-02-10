@@ -68,16 +68,16 @@
         },
         {
             "name": "danielstjules/stringy",
-            "version": "1.8.1",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad"
+                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad",
-                "reference": "6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
+                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +120,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2015-01-08 15:21:43"
+            "time": "2015-02-10 06:19:18"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2841,12 +2841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chris-at-github/yoyo-cms.git",
-                "reference": "25980378e019925198e7160a4dab454f67932035"
+                "reference": "948c92f58a5473666aa0fc402c63a8affbf65e57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chris-at-github/yoyo-cms/zipball/25980378e019925198e7160a4dab454f67932035",
-                "reference": "25980378e019925198e7160a4dab454f67932035",
+                "url": "https://api.github.com/repos/chris-at-github/yoyo-cms/zipball/948c92f58a5473666aa0fc402c63a8affbf65e57",
+                "reference": "948c92f58a5473666aa0fc402c63a8affbf65e57",
                 "shasum": ""
             },
             "require": {
@@ -2873,7 +2873,7 @@
                 "source": "https://github.com/chris-at-github/yoyo-cms/tree/master",
                 "issues": "https://github.com/chris-at-github/yoyo-cms/issues"
             },
-            "time": "2015-02-09 05:47:10"
+            "time": "2015-02-10 06:23:16"
         }
     ],
     "aliases": [],
