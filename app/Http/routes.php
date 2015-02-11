@@ -1,7 +1,6 @@
 <?php
 
 // Routes to model injection
-// Route::model('node', 'Cms\Models\Node');
 Route::model('nodeType', 'Cms\Models\NodeType');
 
 /*
@@ -25,7 +24,17 @@ Route::any('/save/{id?}', array(
 	'as' 		=> 'node.save',
 	'uses'	=> 'NodeController@save'
 ));
-Route::any('/edit/{id}', array(
-	'as' 		=> 'node.edit',
-	'uses'	=> 'NodeController@edit'
+Route::any('/form/{node}', array(
+	'as' 		=> 'node.form',
+	'uses'	=> 'NodeController@form'
 ));
+
+Route::get('/form/{node}', array('as' => 'node.form', function($id = null) {
+	$node = null;
+
+	if($id !== null) {
+		$node = with(new \Cms\Repositories\NodeRepository())->findById($id);
+	}
+
+	return \App::make('\Cms\Controllers\NodeController')->form($node);
+}));
