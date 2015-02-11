@@ -4,17 +4,27 @@
 // ----------------------------------------------------------------------------------
 body {
 	margin: 10px;
+	background: #f8f8f8;
+}
+
+a {
+	text-decoration: none;
 }
 
 
 // ----------------------------------------------------------------------------------
 // Nodes
 .node {
+	margin: 0 0 10px 0;
+	padding: 10px;
+	border: 1px solid $gray-lighter;
+	background: #fff;
 }
 
 .node-container {
 	padding: 5px;
-	border: 3px dashed $gray-light;
+	border: 2px dashed $gray-light;
+	background: none;
 }
 
 .node-create {
@@ -35,12 +45,8 @@ body {
 
 	&:hover {
 		& {
-			background: $brand-primary;
+			background: $gray-light;
 			text-decoration: none;
-		}
-
-		&:before {
-			color: #fff;
 		}
 	}
 }

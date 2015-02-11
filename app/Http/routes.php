@@ -1,6 +1,7 @@
 <?php
 
 // Routes to model injection
+// Route::model('node', 'Cms\Models\Node');
 Route::model('nodeType', 'Cms\Models\NodeType');
 
 /*
@@ -23,4 +24,8 @@ Route::get('/create/{nodeType?}', array(
 Route::any('/save/{id?}', array(
 	'as' 		=> 'node.save',
 	'uses'	=> 'NodeController@save'
+));
+Route::any('/edit/{id}', array(
+	'as' 		=> 'node.edit',
+	'uses'	=> 'NodeController@edit'
 ));

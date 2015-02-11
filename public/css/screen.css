@@ -1,9 +1,20 @@
 body {
-  margin: 10px; }
+  margin: 10px;
+  background: #f8f8f8; }
+
+a {
+  text-decoration: none; }
+
+.node {
+  margin: 0 0 10px 0;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  background: #fff; }
 
 .node-container {
   padding: 5px;
-  border: 3px dashed #d7d8dc; }
+  border: 2px dashed #d7d8dc;
+  background: none; }
 
 .node-create {
   display: block;
@@ -17,7 +28,5 @@ body {
   color: #555555;
   vertical-align: top; }
 .node-create:hover {
-  background: #ffa600;
+  background: #d7d8dc;
   text-decoration: none; }
-.node-create:hover:before {
-  color: #fff; }
