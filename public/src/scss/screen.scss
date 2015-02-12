@@ -1,5 +1,6 @@
 // @import '_bootstrap.scss';
 @import 'bootstrap/_variables.scss';
+@import 'bootstrap/_mixins.scss';
 
 // ----------------------------------------------------------------------------------
 body {
@@ -7,10 +8,50 @@ body {
 	background: #f8f8f8;
 }
 
+header {
+	font-weight: bold;
+}
+
 a {
 	text-decoration: none;
 }
 
+// ----------------------------------------------------------------------------------
+// Grid
+@import 'bootstrap/_grid.scss';
+
+// ----------------------------------------------------------------------------------
+// Forms
+input[type='text'], textarea, select {
+	& {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	&:focus {
+		outline: 0;
+	}
+
+	&.disabled {
+		background: $gray-lighter;
+	}
+}
+
+.form-item {
+	margin: 0 0 10px 0;
+}
+
+.form-item .form-item {
+	margin-bottom: 0;
+}
+
+.form-label {
+	display: block;
+}
+
+.form-field {
+	position: relative;
+}
 
 // ----------------------------------------------------------------------------------
 // Nodes
