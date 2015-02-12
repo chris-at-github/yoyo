@@ -38,3 +38,18 @@ Route::get('/form/{node}', array('as' => 'node.form', function($id = null) {
 
 	return \App::make('\Cms\Controllers\NodeController')->form($node);
 }));
+
+Route::any('/store/{node?}', array('as' => 'node.store', function($id = null) {
+	$node = null;
+	$type = \Input::get('type');
+
+	if($type !== null) {
+		$node = \App::make($type);
+
+		if($id !==  null) {
+			$node = with(new \Cms\Repositories\NodeRepository())->find(array('id' => $id), $type);
+		}
+
+		return \App::make('\Cms\Controllers\NodeController')->store($node);
+	}
+}));
