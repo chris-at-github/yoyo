@@ -1,9 +1,14 @@
 body {
   margin: 10px;
-  background: #f8f8f8; }
+  background: #f8f8f8;
+  font: normal normal 16px/1.4 'Times New Roman'; }
 
 header {
   font-weight: bold; }
+
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit; }
 
 a {
   text-decoration: none; }
@@ -530,7 +535,11 @@ a {
 
 input[type='text'], textarea, select {
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid #d7d8dc;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-appearance: none; }
 input[type='text']:focus, textarea:focus, select:focus {
   outline: 0; }
 input[type='text'].disabled, textarea.disabled, select.disabled {

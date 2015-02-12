@@ -6,10 +6,16 @@
 body {
 	margin: 10px;
 	background: #f8f8f8;
+	font: normal normal 16px/1.4 'Times New Roman';
 }
 
 header {
 	font-weight: bold;
+}
+
+input, textarea, select, button {
+	font-family: inherit;
+	font-size: inherit;
 }
 
 a {
@@ -26,6 +32,10 @@ input[type='text'], textarea, select {
 	& {
 		width: 100%;
 		box-sizing: border-box;
+		border: 1px solid $gray-light;
+		font-family: inherit;
+		font-size: inherit;
+		-webkit-appearance: none;
 	}
 
 	&:focus {

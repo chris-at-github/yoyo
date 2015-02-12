@@ -13,8 +13,6 @@ Route::model('nodeType', 'Cms\Models\NodeType');
 | and give it the controller to call when that URI is requested.
 |
 */
-
-
 Route::get('/', 'PageController@index');
 Route::get('/create/{nodeType?}', array(
 	'as' 		=> 'node.create',
@@ -41,13 +39,14 @@ Route::get('/form/{node}', array('as' => 'node.form', function($id = null) {
 
 Route::any('/store/{node?}', array('as' => 'node.store', function($id = null) {
 	$node = null;
-	$type = \Input::get('type');
+	$type = \App::make('\Cms\Repositories\NodeTypeRepository')->find(['id' => \Input::get('type', 0)]);
 
 	if($type !== null) {
-		$node = \App::make($type);
+		$name = $type->namespace;
+		$node = \App::make($name);
 
 		if($id !==  null) {
-			$node = with(new \Cms\Repositories\NodeRepository())->find(array('id' => $id), $type);
+			$node = with(new \Cms\Repositories\NodeRepository())->find(array('id' => $id), $name);
 		}
 
 		return \App::make('\Cms\Controllers\NodeController')->store($node);
