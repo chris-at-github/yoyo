@@ -18,20 +18,12 @@ Route::get('/create/{nodeType?}', array(
 	'as' 		=> 'node.create',
 	'uses'	=> 'NodeController@create'
 ));
-Route::any('/save/{id?}', array(
-	'as' 		=> 'node.save',
-	'uses'	=> 'NodeController@save'
-));
-Route::any('/form/{node}', array(
-	'as' 		=> 'node.form',
-	'uses'	=> 'NodeController@form'
-));
 
 Route::get('/form/{node}', array('as' => 'node.form', function($id = null) {
 	$node = null;
 
 	if($id !== null) {
-		$node = with(new \Cms\Repositories\NodeRepository())->findById($id);
+		$node = \App::make('\Cms\Repositories\NodeRepository')->find(['id' => $id]);
 	}
 
 	return \App::make('\Cms\Controllers\NodeController')->form($node);
@@ -42,11 +34,11 @@ Route::any('/store/{node?}', array('as' => 'node.store', function($id = null) {
 	$type = \App::make('\Cms\Repositories\NodeTypeRepository')->find(['id' => \Input::get('type', 0)]);
 
 	if($type !== null) {
-		$name = $type->namespace;
-		$node = \App::make($name);
+		$namespace 	= $type->namespace;
+		$node 			= \App::make($namespace);
 
 		if($id !==  null) {
-			$node = with(new \Cms\Repositories\NodeRepository())->find(array('id' => $id), $name);
+			$node = \App::make('\Cms\Repositories\NodeRepository')->find(['id' => $id], $namespace);
 		}
 
 		return \App::make('\Cms\Controllers\NodeController')->store($node);
