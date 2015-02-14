@@ -13,7 +13,6 @@ Route::model('nodeType', 'Cms\Models\NodeType');
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/', 'PageController@index');
 Route::get('/create/{nodeType?}', array(
 	'as' 		=> 'node.create',
 	'uses'	=> 'NodeController@create'
@@ -44,3 +43,8 @@ Route::any('/store/{node?}', array('as' => 'node.store', function($id = null) {
 		return \App::make('\Cms\Controllers\NodeController')->store($node);
 	}
 }));
+
+Route::get('{page?}', array(
+	'as' 		=> 'page',
+	'uses'	=> 'PageController@index'
+));

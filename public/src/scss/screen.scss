@@ -3,6 +3,14 @@
 @import 'bootstrap/_mixins.scss';
 
 // ----------------------------------------------------------------------------------
+* {
+	@include box-sizing(border-box);
+}
+
+*:before, *:after {
+	@include box-sizing(border-box);
+}
+
 body {
 	margin: 10px;
 	background: #f8f8f8;
