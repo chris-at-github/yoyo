@@ -44,7 +44,12 @@ Route::any('/store/{node?}', array('as' => 'node.store', function($id = null) {
 	}
 }));
 
-Route::get('{page?}', array(
-	'as' 		=> 'page',
-	'uses'	=> 'PageController@index'
-));
+Route::get('{page?}', array('as' => 'page', function($id = null) {
+	if($id === null) {
+		$id = \Config::get('cms.page.default');
+	}
+
+	$page = \App::make('\Cms\Repositories\PageRepository')->find(['id' => $id]);
+
+	return \App::make('\Cms\Controllers\PageController')->index($page);
+}));

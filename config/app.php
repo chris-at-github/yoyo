@@ -147,6 +147,7 @@ return [
 		'App\Providers\RouteServiceProvider',
 
 		'Cms\Providers\ViewServiceProvider',
+		'Cms\Providers\ConfigServiceProvider',
 
 	],
 
