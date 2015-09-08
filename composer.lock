@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a78c4810e3794af12b37a6a22706295e",
+    "hash": "b446e57b74b4783d0ce9917ed1c69b59",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -2542,6 +2542,46 @@
             "time": "2015-08-19 09:14:08"
         },
         {
+            "name": "qinx/cms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chris-at-github/qinx-cms.git",
+                "reference": "1e85fc44e69c493f16e87345b14fc78945ecade5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chris-at-github/qinx-cms/zipball/1e85fc44e69c493f16e87345b14fc78945ecade5",
+                "reference": "1e85fc44e69c493f16e87345b14fc78945ecade5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cms\\": "src/Cms/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Pschorr",
+                    "email": "pschorr.christian@gmail.com"
+                }
+            ],
+            "description": "a simple cms based on laravel",
+            "support": {
+                "source": "https://github.com/chris-at-github/qinx-cms/tree/master",
+                "issues": "https://github.com/chris-at-github/qinx-cms/issues"
+            },
+            "time": "2015-09-08 20:23:33"
+        },
+        {
             "name": "sebastian/comparator",
             "version": "1.2.0",
             "source": {
@@ -2960,52 +3000,12 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2015-08-24 07:13:45"
-        },
-        {
-            "name": "yoyo/cms",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chris-at-github/yoyo-cms.git",
-                "reference": "a6bc9734d67dbf93154f448abb8c545a2dc4ee4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chris-at-github/yoyo-cms/zipball/a6bc9734d67dbf93154f448abb8c545a2dc4ee4e",
-                "reference": "a6bc9734d67dbf93154f448abb8c545a2dc4ee4e",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Cms\\": "src/Cms/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Pschorr",
-                    "email": "pschorr.christian@gmail.com"
-                }
-            ],
-            "description": "a simple cms based on laravel",
-            "support": {
-                "source": "https://github.com/chris-at-github/yoyo-cms/tree/master",
-                "issues": "https://github.com/chris-at-github/yoyo-cms/issues"
-            },
-            "time": "2015-02-15 10:19:07"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "yoyo/cms": 20
+        "qinx/cms": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
