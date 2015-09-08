@@ -6,7 +6,7 @@ var plumber = require('gulp-plumber');
 
 // include imagemin plugins
 var changed		= require('gulp-changed');
-var imagemin	= require('gulp-imagemin');
+//var imagemin	= require('gulp-imagemin');
 
 // include js plugins
 // var browserify	= require('gulp-browserify'); optional
@@ -19,16 +19,16 @@ var sass				= require('gulp-sass');
 var autoprefix	= require('gulp-autoprefixer');
 var minifyCSS		= require('gulp-minify-css');
 
-// minify new images
-gulp.task('imagemin', function() {
-	var imageSource	= './src/images/**/*',
-			imageBuild	= './images';
-
-	gulp.src(imageSource)
-		.pipe(changed(imageBuild))
-		.pipe(imagemin())
-		.pipe(gulp.dest(imageBuild));
-});
+//// minify new images
+//gulp.task('imagemin', function() {
+//	var imageSource	= './src/images/**/*',
+//			imageBuild	= './images';
+//
+//	gulp.src(imageSource)
+//		.pipe(changed(imageBuild))
+//		.pipe(imagemin())
+//		.pipe(gulp.dest(imageBuild));
+//});
 
 // JS concat, strip debugging and minify
 gulp.task('scripts', function() {
@@ -51,7 +51,7 @@ gulp.task('styles', function() {
 });
 
 // default gulp task
-gulp.task('default', ['imagemin', 'scripts', 'styles'], function() {
+gulp.task('default', ['scripts', 'styles'], function() {
 	// watch for JS changes
 	gulp.watch('./src/js/*.js', function() {
 		gulp.run('scripts');
